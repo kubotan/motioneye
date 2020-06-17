@@ -9,6 +9,8 @@ mkdir -p /etc/motioneye
 cp /usr/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
 mkdir -p /var/lib/motioneye
 cp /usr/share/motioneye/extra/motioneye.systemd-unit /etc/systemd/system/motioneye.service
+firewall-cmd --add-port=8765/tcp --zone=public --permanent
+firewall-cmd --reload
 systemctl daemon-reload
 systemctl enable motioneye
 systemctl start motioneye
