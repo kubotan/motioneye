@@ -11,8 +11,8 @@ mkdir -p /var/lib/motioneye
 cp /usr/share/motioneye/extra/motioneye.systemd-unit /etc/systemd/system/motioneye.service
 firewall-cmd --add-port=8765/tcp --zone=public --permanent
 firewall-cmd --reload
+pip install motioneye --upgrade
 systemctl daemon-reload
 systemctl enable motioneye
 systemctl start motioneye
-pip install motioneye --upgrade
 systemctl restart motioneye
