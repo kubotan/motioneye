@@ -11,5 +11,6 @@ cp /usr/share/motioneye/extra/motioneye.systemd-unit /etc/systemd/system/motione
 systemctl daemon-reload
 systemctl enable motioneye
 systemctl start motioneye
+pip install --upgrade pip
 pip install motioneye --upgrade
 systemctl restart motioneye
