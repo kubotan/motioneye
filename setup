@@ -2,7 +2,7 @@
 
 yum install epel-release
 yum install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
-yum install motion ffmpeg v4l-utils mailcap python-pip python-devel gcc libcurl-devel pango-devel
+yum install motion ffmpeg v4l-utils mailcap python-pip python-devel gcc libcurl-devel pango-devel redhat-lsb-core
 pip install --upgrade pip
 pip install motioneye
 mkdir -p /etc/motioneye
